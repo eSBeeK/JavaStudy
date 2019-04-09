@@ -6,17 +6,17 @@ public class CutStick {
 		while (true) {
 			int count = 0;
 			int min = 0;
+			
 			for (int i : stick) {
 				if (i > 0)
 					count++;
 				min = i;
 			}
+			
 			System.out.println(count);
-			if (count == 0)
-				break;
 
 			for (int i : stick) {
-				if (min > i)
+				if (min > i && i > 0)
 					min = i;
 			}
 
